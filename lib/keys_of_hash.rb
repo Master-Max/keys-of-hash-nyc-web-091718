@@ -9,6 +9,7 @@ class Hash
         end
       end
     end
+    the_keys
   end
 end
 
