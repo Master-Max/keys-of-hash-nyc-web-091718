@@ -1,13 +1,18 @@
 class Hash
   def keys_of(*arguments)
     # code goes here
-    keys = []
+    arguments.each do |ar|
+      
+  end
+end
+
+
+
+keys = []
     #puts "#{arguments.class} : #{arguments} | #{arguments.keys_of}"
-    puts "=====+++++====="
+    #puts "=====+++++====="
     #puts self.fetch(arguments)
     #puts "#{self.key(arguments[0])}"
     keys.push(arguments.collect {|ar| self.key(ar)})
-    puts keys.flatten!
+    #puts keys.flatten!
     keys
-  end
-end
