@@ -5,7 +5,7 @@ class Hash
     #puts "#{arguments.class} : #{arguments} | #{arguments.keys_of}"
     puts "=====+++++====="
     #puts self.fetch(arguments)
-    puts "#{self.key(arguments[0])}"
+    #puts "#{self.key(arguments[0])}"
     keys.push(arguments.collect {|ar| self.key(ar)})
     keys.flatten!
   end
