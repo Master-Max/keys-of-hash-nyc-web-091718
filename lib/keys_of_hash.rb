@@ -5,6 +5,6 @@ class Hash
     #puts "#{arguments.class} : #{arguments} | #{arguments.keys_of}"
     puts "=====+++++====="
     #puts self.fetch(arguments)
-    puts "#{self}"
+    puts "#{self.fetch("Australia")}"
   end
 end
