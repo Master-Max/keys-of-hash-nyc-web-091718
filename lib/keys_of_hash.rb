@@ -1,7 +1,7 @@
 class Hash
   def keys_of(*arguments)
     # code goes here
-    self.collect{ |k,v| v==arguments ? k : nil }.compact
+    self.collect{ |k,v| v == arguments ? k : nil}.compact
   end
 end
 
