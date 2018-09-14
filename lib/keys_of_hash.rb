@@ -7,6 +7,6 @@ class Hash
     #puts self.fetch(arguments)
     puts "#{self.key(arguments[0])}"
     keys.push(arguments.collect {|ar| self.key(ar)})
-    keys
+    keys.flatten!
   end
 end
