@@ -7,6 +7,14 @@ class Hash
         if v == arguments[0]
           the_keys.push(k)
         end
+      else
+        i = 0
+        while i < arguments.size do
+          if v == arguments[i]
+            the_keys.push(k)
+          end
+          i += 1
+        end
       end
     end
     the_keys
