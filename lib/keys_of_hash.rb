@@ -1,7 +1,14 @@
 class Hash
   def keys_of(*arguments)
     # code goes here
-    self.collect{ |k,v| v == arguments ? k : nil}.compact
+    the_keys = []
+    self.each do |k,v|
+      if arguments.size == 1
+        if v == arguments[0]
+          the_keys.push(k)
+        end
+      end
+    end
   end
 end
 
