@@ -8,5 +8,6 @@ class Hash
     #puts "#{self.key(arguments[0])}"
     keys.push(arguments.collect {|ar| self.key(ar)})
     puts keys.flatten!
+    keys
   end
 end
