@@ -4,6 +4,6 @@ class Hash
     keys = []
     #puts "#{arguments.class} : #{arguments} | #{arguments.keys_of}"
     puts "=====+++++====="
-    puts Hash.fetch(arguments)
+    puts this.fetch(arguments)
   end
 end
